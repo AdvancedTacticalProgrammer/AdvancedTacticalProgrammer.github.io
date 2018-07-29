@@ -303,11 +303,9 @@
             <p>折腾了一晚上，大概把这个采用Hexo+GitHub的博客环境搭建好了（至少能访问了）。<br>踩过的坑主要是被某篇csdn博客误导所导致的hexo配置文件的对齐问题。<br>博客上给的示例是这样的：（错误，会导致报错）</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">    repository: https://github.com/username/username.github.io.git</span><br><span class="line">    branch: master</span><br></pre></td></tr></table></figure>
 <p>搜索报错信息，网上大部分都是在说冒号后面加空格的问题，但是显然我已经加了。<br>如果去掉空格反而可以，但这样显然语法和前文不一致，<br>而且实际测试这样虽然不报错但是hexo d也不能成功。<br>实际上，关键就在这个缩进上。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">    <span class="built_in">type</span>: git</span><br><span class="line">    repository: https://github.com/username/username.github.io.git</span><br><span class="line">    branch: master</span><br></pre></td></tr></table></figure></p>
-<p>这就是正确的。</p>
-<p>##启示<br>这个坑大概有两个启示</p>
-<p>###写博客尽量要负责，否则很容易迷惑读者</p>
-<p>###按博客索骥遇到问题的时候最好先看看博客的评论区……因为我找到解决方案之后才发现已经有人就这个问题回复过作者了</p>
-
+<p>这就是能不报错并且可用的。</p>
+<h2 id="启示"><a href="#启示" class="headerlink" title="启示"></a>启示</h2><p>这个坑大概有两个启示</p>
+<h3 id="写博客尽量要负责，否则很容易迷惑读者"><a href="#写博客尽量要负责，否则很容易迷惑读者" class="headerlink" title="写博客尽量要负责，否则很容易迷惑读者"></a>写博客尽量要负责，否则很容易迷惑读者</h3><h3 id="按博客索骥遇到问题的时候最好先看看博客的评论区……因为我找到解决方案之后才发现已经有人就这个问题回复过作者了"><a href="#按博客索骥遇到问题的时候最好先看看博客的评论区……因为我找到解决方案之后才发现已经有人就这个问题回复过作者了" class="headerlink" title="按博客索骥遇到问题的时候最好先看看博客的评论区……因为我找到解决方案之后才发现已经有人就这个问题回复过作者了"></a>按博客索骥遇到问题的时候最好先看看博客的评论区……因为我找到解决方案之后才发现已经有人就这个问题回复过作者了</h3>
           
         
       
