@@ -79,17 +79,24 @@
 
 
 
-<meta name="description" content="折腾了一晚上，大概把这个采用Hexo+GitHub的博客环境搭建好了（至少能访问了）。踩过的坑主要是被某篇csdn博客误导所导致的hexo配置文件的对齐问题。博客上给的示例是这样的：（错误，会导致报错） 1234deploy:  type: git    repository: https://github.com/username/username.github.io.git    branch">
+<meta name="description" content="漫谈古典火器（一）古典火器并没有一个严格的定义。在这里，笔者粗略地将早期击发枪以及更早的火器定义为古典火器。古典火器现在已经基本退出了实用领域，但它们发射时的火光和烟雾，颇有仪式感的装填流程，以及身上承载的历史，都让古典火器有着不同于现代枪械的独特魅力。 另外，火器的结构和原理是从简单到复杂逐渐发展的。重温古典火器的发展史，也有助于读者理解现代枪械的结构和原理。 ##黑火药中国的炼丹家们最早在炼丹">
 <meta property="og:type" content="article">
-<meta property="og:title" content="搭建Hexo+GitHub时踩过的坑">
-<meta property="og:url" content="http://yoursite.com/2018/07/29/搭建hexo+github时踩过的坑/index.html">
+<meta property="og:title" content="BLOG">
+<meta property="og:url" content="http://yoursite.com/2018/07/31/漫谈古典火器（一）/index.html">
 <meta property="og:site_name" content="BLOG">
-<meta property="og:description" content="折腾了一晚上，大概把这个采用Hexo+GitHub的博客环境搭建好了（至少能访问了）。踩过的坑主要是被某篇csdn博客误导所导致的hexo配置文件的对齐问题。博客上给的示例是这样的：（错误，会导致报错） 1234deploy:  type: git    repository: https://github.com/username/username.github.io.git    branch">
+<meta property="og:description" content="漫谈古典火器（一）古典火器并没有一个严格的定义。在这里，笔者粗略地将早期击发枪以及更早的火器定义为古典火器。古典火器现在已经基本退出了实用领域，但它们发射时的火光和烟雾，颇有仪式感的装填流程，以及身上承载的历史，都让古典火器有着不同于现代枪械的独特魅力。 另外，火器的结构和原理是从简单到复杂逐渐发展的。重温古典火器的发展史，也有助于读者理解现代枪械的结构和原理。 ##黑火药中国的炼丹家们最早在炼丹">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-07-29T15:52:23.076Z">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/e/e4/%E6%AD%A6%E7%BB%8F%E6%80%BB%E8%A6%81_%E7%81%AB%E7%90%83%E5%9B%BE.jpg">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/7/7d/%E6%AD%A6%E7%BB%8F%E6%80%BB%E8%A6%81%E5%85%A8%E5%89%8D%E9%9B%86%E5%8D%B7%E5%8D%81%E4%BA%8C_%E9%9C%B9%E9%9B%B3%E7%81%AB%E7%90%83%E5%9B%BE.jpg">
+<meta property="og:image" content="https://s1.ax1x.com/2018/08/01/Pwhnv8.png">
+<meta property="og:image" content="https://s1.ax1x.com/2018/08/01/Pwh3Us.png">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/c/cf/Yuan_chinese_gun.jpg">
+<meta property="og:image" content="https://gss2.bdstatic.com/9fo3dSag_xI4khGkpoWK1HF6hhy/baike/crop%3D0%2C0%2C700%2C462%3Bc0%3Dbaike92%2C5%2C5%2C92%2C30/sign=b902e6d2d7c451dae2b956ab8bcd7e56/aa64034f78f0f7360d14328d0055b319eac41357.jpg">
+<meta property="og:updated_time" content="2018-08-01T14:47:20.786Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="搭建Hexo+GitHub时踩过的坑">
-<meta name="twitter:description" content="折腾了一晚上，大概把这个采用Hexo+GitHub的博客环境搭建好了（至少能访问了）。踩过的坑主要是被某篇csdn博客误导所导致的hexo配置文件的对齐问题。博客上给的示例是这样的：（错误，会导致报错） 1234deploy:  type: git    repository: https://github.com/username/username.github.io.git    branch">
+<meta name="twitter:title" content="BLOG">
+<meta name="twitter:description" content="漫谈古典火器（一）古典火器并没有一个严格的定义。在这里，笔者粗略地将早期击发枪以及更早的火器定义为古典火器。古典火器现在已经基本退出了实用领域，但它们发射时的火光和烟雾，颇有仪式感的装填流程，以及身上承载的历史，都让古典火器有着不同于现代枪械的独特魅力。 另外，火器的结构和原理是从简单到复杂逐渐发展的。重温古典火器的发展史，也有助于读者理解现代枪械的结构和原理。 ##黑火药中国的炼丹家们最早在炼丹">
+<meta name="twitter:image" content="https://upload.wikimedia.org/wikipedia/commons/e/e4/%E6%AD%A6%E7%BB%8F%E6%80%BB%E8%A6%81_%E7%81%AB%E7%90%83%E5%9B%BE.jpg">
 
 
 
@@ -119,13 +126,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/07/29/搭建hexo+github时踩过的坑/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/07/31/漫谈古典火器（一）/"/>
 
 
 
 
 
-  <title>搭建Hexo+GitHub时踩过的坑 | BLOG</title>
+  <title> | BLOG</title>
   
 
 
@@ -232,7 +239,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/29/搭建hexo+github时踩过的坑/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/31/漫谈古典火器（一）/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="DT">
@@ -249,7 +256,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">搭建Hexo+GitHub时踩过的坑</h1>
+          <h1 class="post-title" itemprop="name headline"></h1>
         
 
         <div class="post-meta">
@@ -261,8 +268,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-29T23:21:28+08:00">
-                2018-07-29
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-31T21:31:34+08:00">
+                2018-07-31
               </time>
             
 
@@ -280,8 +287,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/07/29/搭建hexo+github时踩过的坑/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/07/29/搭建hexo+github时踩过的坑/" itemprop="commentCount"></span>
+                <a href="/2018/07/31/漫谈古典火器（一）/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/07/31/漫谈古典火器（一）/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -289,7 +296,7 @@
 
           
           
-             <span id="/2018/07/29/搭建hexo+github时踩过的坑/" class="leancloud_visitors" data-flag-title="搭建Hexo+GitHub时踩过的坑">
+             <span id="/2018/07/31/漫谈古典火器（一）/" class="leancloud_visitors" data-flag-title="">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -320,12 +327,69 @@
       
 
       
-        <p>折腾了一晚上，大概把这个采用Hexo+GitHub的博客环境搭建好了（至少能访问了）。<br>踩过的坑主要是被某篇csdn博客误导所导致的hexo配置文件的对齐问题。<br>博客上给的示例是这样的：（错误，会导致报错）</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">    repository: https://github.com/username/username.github.io.git</span><br><span class="line">    branch: master</span><br></pre></td></tr></table></figure>
-<p>搜索报错信息，网上大部分都是在说冒号后面加空格的问题，但是显然我已经加了。<br>如果去掉空格反而可以，但这样显然语法和前文不一致，<br>而且实际测试这样虽然不报错但是hexo d也不能成功。<br>实际上，关键就在这个缩进上。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">    <span class="built_in">type</span>: git</span><br><span class="line">    repository: https://github.com/username/username.github.io.git</span><br><span class="line">    branch: master</span><br></pre></td></tr></table></figure></p>
-<p>这就是能不报错并且可用的。</p>
-<h2 id="启示"><a href="#启示" class="headerlink" title="启示"></a>启示</h2><p>这个坑大概有两个启示</p>
-<h3 id="写博客尽量要负责，否则很容易迷惑读者"><a href="#写博客尽量要负责，否则很容易迷惑读者" class="headerlink" title="写博客尽量要负责，否则很容易迷惑读者"></a>写博客尽量要负责，否则很容易迷惑读者</h3><h3 id="按博客索骥遇到问题的时候最好先看看博客的评论区……因为我找到解决方案之后才发现已经有人就这个问题回复过作者了"><a href="#按博客索骥遇到问题的时候最好先看看博客的评论区……因为我找到解决方案之后才发现已经有人就这个问题回复过作者了" class="headerlink" title="按博客索骥遇到问题的时候最好先看看博客的评论区……因为我找到解决方案之后才发现已经有人就这个问题回复过作者了"></a>按博客索骥遇到问题的时候最好先看看博客的评论区……因为我找到解决方案之后才发现已经有人就这个问题回复过作者了</h3>
+        <h1 id="漫谈古典火器（一）"><a href="#漫谈古典火器（一）" class="headerlink" title="漫谈古典火器（一）"></a>漫谈古典火器（一）</h1><p>古典火器并没有一个严格的定义。在这里，笔者粗略地将早期击发枪以及更早的火器定义为古典火器。古典火器现在已经基本退出了实用领域，但它们发射时的火光和烟雾，颇有仪式感的装填流程，以及身上承载的历史，都让古典火器有着不同于现代枪械的独特魅力。</p>
+<p>另外，火器的结构和原理是从简单到复杂逐渐发展的。重温古典火器的发展史，也有助于读者理解现代枪械的结构和原理。</p>
+<p>##黑火药<br>中国的炼丹家们最早在炼丹的实践中发现了硝石，硫磺和木炭的性质，从而发明了黑火药。很长一段时间内，黑火药都是人类所掌握的唯一一种化学爆炸物。</p>
+<p>一般认为，黑火药燃烧的化学反应式为</p>
+<blockquote>
+<p>2KNO3 + S + 3C → K2S + N2 + 3CO2</p>
+</blockquote>
+<p>因此理想状况下，黑火药三种组分的摩尔比例应当为硝酸钾：硫磺：木炭=2：1：3 。这也正是人们常说的“一硫二硝三木炭”。</p>
+<p>考虑上三者的相对分子质量</p>
+<ul>
+<li>KNO3  101</li>
+<li>S  32</li>
+<li>C  12</li>
+</ul>
+<p>我们可以计算出三种组分的理想质量比为</p>
+<blockquote>
+<p>硝酸钾 ：硫磺 ：木炭 = 74.81% ：11.85% ：13.33%</p>
+</blockquote>
+<p>当然，在早期没有这些化学理论的时候，人们也通过生产实践，摸索出了一个很接近的配方比例</p>
+<blockquote>
+<p>硝酸钾 ：硫磺 ：木炭 = 75 ：10 ：15</p>
+</blockquote>
+<p>事实上，现在的实际生产中人们依然在广泛使用这一比例作为标准。</p>
+<!--
+###黑火药的制作
+没有什么方法比亲手制作更能体验黑火药的魅力了。但在尝试制作黑火药之前，请一定注意相关的安全和法律风险。
+
+>警告：在尝试制作黑火药之前，请确保您已经充分了解并遵守您所在地的相关法律法规。否则可能导致您面临刑事处罚！本文的相关法律意见仅供中国大陆地区读者参考，请以专业人士意见为准！
+
+>警告：在尝试制作黑火药之前，请确保您已经充分了解并遵守相关安全操作规程。否则可能发生事故，导致财产损失，受伤甚至死亡！
+
+在中国大陆地区，制作黑火药1kg以上就已经触犯了刑法（详见：[《关于审理非法制造、买卖、运输枪支、弹药、爆炸物等刑事案件具体应用法律若干问题的解释》](http://www.court.gov.cn/zixun-xiangqing-77)）。
+-->
+<p>###粉末还是颗粒？<br>将黑火药的三种组分研磨成粉末并充分混合均匀就制成了粉末状黑火药。但人们在实践中发现，如果将这些粉末进一步加工制成颗粒状，可以有效提高黑火药的性能。颗粒状黑火药相较于粉末状黑火药的优势主要在于</p>
+<ul>
+<li>各种组分不易分层：粉末状火药在长时间储存或者运输的过程中，由于各组分的密度不同，会出现分层的现象，严重影响了火药的性能。而颗粒状火药各成分结合的较紧密，不易出现分层现象。</li>
+<li>燃速更快：将少许粉末状黑火药放置在一张纸上点燃，往往会把纸烧出一个洞。而用颗粒状黑火药做同样的实验，往往不会点燃纸张。可能的原因是颗粒状火药间会填充少许气体，这些气体可以自由流动，提高了传热的速度。</li>
+</ul>
+<p>##宋代中国火器</p>
+<p>###火球和火箭<br>北宋初期的中国火药由于含硫量偏高，含硝，炭偏少，甚至还含有10%的植物油，因此成膏状，燃速低，残留大。因此在军事上的应用主要局限于依靠埋设、投掷或传统冷兵器（弓箭、投石机）发射的爆燃类火器。这类火器名目繁杂，仅《武经总要》中就记载了八种火球和两种火箭。但它们的原理都是通过爆炸破片，燃烧和烟雾打击目标。</p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/%E6%AD%A6%E7%BB%8F%E6%80%BB%E8%A6%81_%E7%81%AB%E7%90%83%E5%9B%BE.jpg" alt=""><br><img src="https://upload.wikimedia.org/wikipedia/commons/7/7d/%E6%AD%A6%E7%BB%8F%E6%80%BB%E8%A6%81%E5%85%A8%E5%89%8D%E9%9B%86%E5%8D%B7%E5%8D%81%E4%BA%8C_%E9%9C%B9%E9%9B%B3%E7%81%AB%E7%90%83%E5%9B%BE.jpg" alt=""></p>
+<p>###火枪、飞火枪和突火枪<br>火枪是1132年德安知府陈规在守德安城时使用的一种筒形火器。这里的“枪”应当理解为冷兵器的枪，而火枪则即是带有喷火功能的长杆兵器。据陈规撰写的《守城录》记载，这种喷火兵器由两人使用，可以对敌方的攻城器械造成良好的毁伤效果。</p>
+<!--
+![](http://image.cnki.net/tempfile/XBZK2006010010005_s.jpg)
+
+【上图】1132 年的火枪(下)及其喷火筒内部构造(上) 1—筒口 2—前膛 3—筒壁 4—燃烧室 5—火门 6—药线 7—纸团 8—火药 9—泥层 10—底壁 11—喷火筒 12—矛头 13—铁皮 14—枪杆 15—枪托 (潘吉星复原)
+-->
+<p><img src="https://s1.ax1x.com/2018/08/01/Pwhnv8.png" alt=""></p>
+<p>约百年之后，金军在战场上使用的“飞火枪”可以认为是火枪的一种改进版本。据《金史》记载，飞火枪改用纸筒，长二尺许，火焰能喷出丈余远，且可单人使用。</p>
+<p>前述的这些早期火器，不论原理还是结构，都和民间的烟花十分类似，可以理解为加大版本的烟花。主要依靠喷出的焰火攻击目标。而突火枪则是1259年寿春府兵工厂生产的筒形火器。虽然结构和火枪类似，但它不仅喷射火焰和气流，同时射出被称为“子窠”的弹丸。可以说已经有了管状动能火器的雏形。</p>
+<p><img src="https://s1.ax1x.com/2018/08/01/Pwh3Us.png" alt=""></p>
+<p>##火门铳<br>火门铳是指金属身管的火门式管状火器。火门式管状火器是指在膛壁上开出一个传火孔，用导火索，明火或灼热的金属丝点燃火药的管状火器。可以看出，前述的几种管状火器均为火门式击发原理。但它们使用的纸筒或竹筒强度较低，能承受的膛压也很低，因此不能将全部的火药燃气用于推动弹丸，也自然不属于纯粹的火药动能武器。</p>
+<p>手持的火门铳在击发时，必须一手持铳，一手持火源点火。一手持铳不稳定（尤其早期的铸造水平较差，铳身往往非常厚重），难以瞄准，严重影响射击精度。因此在火绳枪出现后很快被替代。而大口径铳（炮）往往安放于炮架之上，火门式击发方法简单可靠，因此即使在火绳，燧发等击发方式出现后依然广泛使用，几乎贯穿了整个前膛炮时代。</p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Yuan_chinese_gun.jpg" alt=""></p>
+<p>###三眼铳<br>三眼铳是一种三管火门铳，短管长柄。三眼铳作为骑兵武器广泛流行于明代，其本身不仅可以作为火器发射，也可以在发射后当作类似于锤的冷兵器使用。</p>
+<p><img src="https://gss2.bdstatic.com/9fo3dSag_xI4khGkpoWK1HF6hhy/baike/crop%3D0%2C0%2C700%2C462%3Bc0%3Dbaike92%2C5%2C5%2C92%2C30/sign=b902e6d2d7c451dae2b956ab8bcd7e56/aa64034f78f0f7360d14328d0055b319eac41357.jpg" alt=""></p>
+<p>##参考文献</p>
+<ol>
+<li>中国火器史[M]. 军事科学出版社 , 王兆春著, 1991</li>
+<li>潘吉星.论南宋发展的三种新式筒形火器[J].北京教育学院学报(自然科学版),2006(01):2-9+34.</li>
+<li>陈规(宋).守城录, 卷四, 德安守御录(1146)下 [M].北京:军事出版社,1990.148-149.</li>
+</ol>
+
       
     </div>
     
@@ -349,8 +413,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/07/29/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
+              <a href="/2018/07/29/搭建hexo+github时踩过的坑/" rel="next" title="搭建Hexo+GitHub时踩过的坑">
+                <i class="fa fa-chevron-left"></i> 搭建Hexo+GitHub时踩过的坑
               </a>
             
           </div>
@@ -358,10 +422,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/07/31/漫谈古典火器（一）/" rel="prev" title="">
-                 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -478,7 +538,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#启示"><span class="nav-number">1.</span> <span class="nav-text">启示</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#写博客尽量要负责，否则很容易迷惑读者"><span class="nav-number">1.1.</span> <span class="nav-text">写博客尽量要负责，否则很容易迷惑读者</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#按博客索骥遇到问题的时候最好先看看博客的评论区……因为我找到解决方案之后才发现已经有人就这个问题回复过作者了"><span class="nav-number">1.2.</span> <span class="nav-text">按博客索骥遇到问题的时候最好先看看博客的评论区……因为我找到解决方案之后才发现已经有人就这个问题回复过作者了</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#漫谈古典火器（一）"><span class="nav-number">1.</span> <span class="nav-text">漫谈古典火器（一）</span></a></li></ol></div>
             
 
           </div>
